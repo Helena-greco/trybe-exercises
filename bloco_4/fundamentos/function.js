@@ -33,7 +33,7 @@
   //}
 //}
 
-function verificaPalindrome(word){
+/*function verificaPalindrome(word){
   for(index in word){
     if(word[index] != word[(word.length - 1) - index]){
       return false;
@@ -42,5 +42,28 @@ function verificaPalindrome(word){
   return true;
 }
 
-console.log(verificaPalindrome('arara'));
+console.log(verificaPalindrome('arara'));*/
 
+/*function indiceDoMaior(numero) {
+  let indiceDoMaior = 0;
+  for (let indice in numero) {
+    if (numero[indiceDoMaior] < numero[indice]) {
+      indiceDoMaior = indice;
+    }
+  }
+  return indiceDoMaior;
+}
+
+console.log(indiceDoMaior([2, 3, 6, 7, 10, 1])); */
+
+function indiceMenor(numero) {
+  let indiceMenor = 0;
+  for(let indice in numero) {
+    if(numero[indiceMenor] > numero[indice]) {
+      indiceMenor = indice;
+    }
+  }
+  return indiceMenor;
+}
+
+console.log(indiceMenor([2, 4, 6, 7, 10, 0, -3]));
