@@ -56,7 +56,7 @@ console.log(verificaPalindrome('arara'));*/
 
 console.log(indiceDoMaior([2, 3, 6, 7, 10, 1])); */
 
-function indiceMenor(numero) {
+/*function indiceMenor(numero) {
   let indiceMenor = 0;
   for(let indice in numero) {
     if(numero[indiceMenor] > numero[indice]) {
@@ -66,4 +66,4 @@ function indiceMenor(numero) {
   return indiceMenor;
 }
 
-console.log(indiceMenor([2, 4, 6, 7, 10, 0, -3]));
+console.log(indiceMenor([2, 4, 6, 7, 10, 0, -3]));*/ 
