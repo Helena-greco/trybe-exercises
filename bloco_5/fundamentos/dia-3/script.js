@@ -13,4 +13,42 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 
+const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+
+function createDays() {
+  let getDaysList = document.querySelector('#days')
+  for (index = 0; index < dezDaysList.length; index += 1) {
+    let days = dezDaysList[index];
+    let liDays = document.createElement('li');
+
+    if (days === 24 | days === 31) {
+      liDays.className = "day holiday";
+      liDays.innerHTML = days;
+      getDaysList.appendChild(liDays);
+    } else if (days === 25) {
+      liDays.className = "day holiday friday";
+      liDays.innerHTML = days;
+      getDaysList.appendChild(liDays);
+    } else if (days === 4 | days === 11 | days === 18) {
+      liDays.className = "day friday";
+      liDays.innerHTML = days;
+      getDaysList.appendChild(liDays);
+    } else {
+      liDays.className = "day";
+      liDays.innerHTML = days;
+      getDaysList.appendChild(liDays);
+    }
+  }
+}
+
+createDays();
+
+function holidays(Feriados) {
+  let buttonsContainer = document.querySelector('.buttons-container');
+  let button = document.createElement('button');
+  button.innerHTML = 'button';
+  button.id = 'btn-holiday';
+  buttonsContainer.appendChild(button);
+}
+
 // Escreva seu código abaixo.
