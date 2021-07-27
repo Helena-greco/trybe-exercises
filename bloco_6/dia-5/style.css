@@ -1,0 +1,49 @@
+body {
+  background-color:rgb(197, 170, 110);
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10%
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#paragraph {
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    background-color:beige;
+  }
+
+  section {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
