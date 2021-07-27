@@ -1,17 +1,3 @@
-// function testingScope(escopo) {
-//   if (escopo === true) {
-//     var ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
-//     ifScope = ifScope + ' ótimo, fui utilizada no escopo !';
-//     console.log(ifScope);
-//   } else {
-//     var elseScope = 'Não devo ser utilizada fora meu escopo (else)';
-//     console.log(elseScope);
-//   }
-//   console.log(ifScope + ' o que estou fazendo aqui ? :O'); // Se necessário esta linha pode ser removida.
-// }
-
-// testingScope(true);
-
 // Modifique a estrutura da função para que ela seja uma arrow function .
 
 const testingScope = (escopo) => {
@@ -48,3 +34,37 @@ const sortedArray = sortOddsAndEvens();
 console.log(`Os números ${sortedArray} se encontram ordenados de forma crescente !`);
 
 console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente !`);
+
+// Crie uma função que receba um número e retorne seu fatorial.
+
+const factorial = number => {
+  let result = 1;
+  for (let index = 2; index <= number; index += 1) {
+      result *= index;
+  }
+  return result;
+}
+
+console.log(factorial(8));
+
+// tente fazer o mesmo exercício de forma recursiva . Spoiler: É possível resolver com uma linha usando ternary operator .
+
+const factorial = number => number > 1 /* condição */? number * factorial(number - 1) /* se for true a condição retorna esse cálculo */ : 1; /* se for false, retorna esse valor */
+console.log(factorial(5));
+
+// Crie uma função que receba uma frase e retorne qual a maior palavra.
+
+const longestWord = text => {
+  let wordArray = text.split(' ');
+  let maxLength = 0;
+  let result = '';
+  for (const word of wordArray) {
+      if (word.length > maxLength) {
+          maxLength = word.length;
+          result = word;
+      }
+  }
+  return result;
+}
+
+console.log(longestWord("Antonio foi no banheiro e não sabemos o que aconteceu"));
