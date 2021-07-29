@@ -37,15 +37,15 @@ console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram orde
 
 // Crie uma função que receba um número e retorne seu fatorial.
 
-const factorial = number => {
-  let result = 1;
+const fatorial = number => {
+  let resultado = 1;
   for (let index = 2; index <= number; index += 1) {
-      result *= index;
+      resultado *= index;
   }
-  return result;
+  return resultado;
 }
 
-console.log(factorial(8));
+console.log(fatorial(8));
 
 // tente fazer o mesmo exercício de forma recursiva . Spoiler: É possível resolver com uma linha usando ternary operator .
 
