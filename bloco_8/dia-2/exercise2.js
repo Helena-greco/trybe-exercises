@@ -68,7 +68,7 @@ const books = [
 function smallerName(element, index) {
   let nameBook;
   // escreva aqui o seu código
-  books.forEach((book) => {
+  books.forEach((book) => { // !(variável), ela não ser undefined || (ou)
     if (!nameBook || book.name.length < nameBook.length) {
       nameBook = book.name;
     }
