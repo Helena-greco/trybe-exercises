@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import './App.css'
 
 const Task = (value) => {
   return (
-    <li key={value}>{value}</li>
+    <li>{value}</li>
   );
 }
 
-const tarefas = ['Acordar', 'Tomar banho', 'Lanchar', 'Ir para o Trabalho', 'Estudar', 'Imporante: Beber Água'];
+const tarefas = ['Acordar', 'Tomar banho', 'Lanchar', 'Ir para o Trabalho', 'Estudar', 'Importante: Beber Água'];
 
 class TaskList extends Component {
   render() {
