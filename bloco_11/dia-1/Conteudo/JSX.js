@@ -11,6 +11,7 @@
  * 
  * O JSX , ou Javascript Syntax Extension é uma extensão de sintaxe para Javascript.
  * 
+ * para add no repositório git: git remote add <nomedoarquivo>
  * 
  * A construção de um elemento JSX é bem parecida com um elemento HTML, com pequenas diferenças. A declaração de uma class no HTML, que é substituída por className no JSX.
  * const element = <h1>Hello, world!</h1>;
