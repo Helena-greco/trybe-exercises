@@ -1,9 +1,13 @@
 import './App.css';
 import TaskList from './component'
+import Image from './Image';
 
 function App() {
   return (
-    <TaskList />
+    <div>
+      <TaskList />
+      <Image />
+    </div>
   );
 }
 
